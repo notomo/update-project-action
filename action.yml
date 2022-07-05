@@ -57,7 +57,7 @@ runs:
             user(login: $organization) {
               projectV2(number: $project_number) {
                 id
-                items(first: 100) {
+                items(last: 100) {
                   nodes {
                     id
                     content {
