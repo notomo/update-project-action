@@ -147,7 +147,7 @@ runs:
           echo "::set-output name=value_to_set::$OPTION_ID"
           echo '::set-output name=value_type::singleSelectOptionId'
         elif [ "$FIELD_TYPE" = "iteration" ]; then
-          echo "::set-output name=value_to_set::\"$VALUE\""
+          echo "::set-output name=value_to_set::$VALUE"
           echo '::set-output name=value_type::iterationId'
         else
           echo "::set-output name=value_to_set::$VALUE"
